@@ -315,16 +315,12 @@ textarea:hover {
   }
   
   .midup{
-    all:initial;
-    position: absolute;
-    top: 1%;
-    right: 1%;
-    font-size: 1em;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 700;
-    color: #333533;
+    display:none;
   }
   
+  .leftdown{
+    display:none;
+  }
   .middown{
     display: none;
   }
