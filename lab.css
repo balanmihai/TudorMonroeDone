@@ -79,6 +79,12 @@ footer{
 
 @media screen and (max-width:960px) {
 
+  .page{
+  width: 100vw;
+  min-height: 100vh;
+  background: #EEEEEE;
+}
+  
   body{
     overflow: hidden;
   }
