@@ -9,7 +9,7 @@
 html{
   scroll-behavior: smooth;
   cursor: default;
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 
 body{
@@ -84,6 +84,15 @@ nav a:hover{
 }
 
 @media screen and (max-width:960px) {
+
+  .page{
+    color: #333533;
+    height: 100vh;
+    display: flex;
+    width: 98%;
+    margin: auto;
+  }
+  
   a, h3, h1{
     font-size: 1em;
     font-family: 'Roboto', sans-serif;
@@ -96,6 +105,6 @@ nav a:hover{
     font-size: 2em;
     font-weight: 900;
     color: #EEEEEE;
-    -webkit-text-stroke: 2px #8338EC;
+    -webkit-text-stroke: 1px #8338EC;
   }
 }
