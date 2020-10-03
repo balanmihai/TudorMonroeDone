@@ -140,8 +140,19 @@ h1, h3, a, p{
   }
 
   .bgtext{
-    display:none;
+    grid-column: 2/3;
+    text-align: left;
   }
+  
+  .bgtext h1{
+    display: inline-block;
+    color: #EEEEEE;
+    font-size: 2em;
+    z-index: -1;
+    -webkit-text-stroke: 1px #8338EC;
+  }
+
+  
 
   .midup{
     display: none;
