@@ -153,7 +153,7 @@ h1,h3, a, p{
 
 
   .collab1{
-    background: url(/Pictures/bg.png);
+    background: url(./Pictures/bg.png);
     position: relative;
     display: grid;
     width: 100%;
@@ -163,7 +163,7 @@ h1,h3, a, p{
     overflow: hidden;
   }
   .collab2{
-    background: url(/Pictures/bg.png);
+    background: url(./Pictures/bg.png);
     position: relative;
     display: grid;
     width: 100%;
