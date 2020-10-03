@@ -197,6 +197,12 @@ footer{
 @media (max-width: 767px) {
 
 
+  .landingpage{
+    background: #EEEEEE;
+    width: 100%;
+    min-height: 100vh;
+  }
+
   body{
     overflow: hidden;
   }
