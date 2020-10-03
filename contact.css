@@ -10,7 +10,6 @@
 html{
   scroll-behavior: smooth;
   cursor: default;
-  overflow: hidden;
 }
 
 ::-webkit-scrollbar {
@@ -315,6 +314,10 @@ textarea:hover {
   }
   
   .midup{
+    display:none;
+  }
+  
+  .rightdown{
     display:none;
   }
   
