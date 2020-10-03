@@ -131,9 +131,8 @@ h1, h3, a, p{
 
   .tudor{
     position: absolute;
-    bottom: 1%;
+    bottom: 5%;
     height: 50vh;
-    padding-bottom: 5vh;
   }
 
   .cv p{
