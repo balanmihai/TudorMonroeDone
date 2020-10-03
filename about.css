@@ -116,10 +116,9 @@ h1, h3, a, p{
 
   .cv{
     grid-column: 2/3;
-    justify-content: center;
-    align-items: center;
     text-align: left;
     left: 1%;
+    bottom: 1%;
     position: relative;
   }
   
@@ -128,10 +127,11 @@ h1, h3, a, p{
     font-size: 3em;
     color: #8338EC;
     text-align: center;
-    padding-bottom: 5vh;
   }
 
   .tudor{
+    position: absolute;
+    bottom: 1%;
     height: 50vh;
     padding-bottom: 5vh;
   }
@@ -141,7 +141,16 @@ h1, h3, a, p{
   }
 
   .bgtext{
-    display:none;
+    grid-column: 2/3;
+    text-align: left;
+  }
+  
+  .bgtext h1{
+    display: inline-block;
+    color: #EEEEEE;
+    font-size: 3em;
+    z-index: -1;
+    -webkit-text-stroke: 2px #8338EC;
   }
 
 
@@ -162,16 +171,6 @@ h1, h3, a, p{
     
   }
   
-  .title{
-    font-family: 'Roboto', sans-serif;
-    font-weight: 900;
-    text-decoration: none;
-    color: #EEEEEE;
-    -webkit-text-stroke: 2px #8338EC;
-    font-size: 2rem;
-    text-align: center;
-  }
-  
   
   .fullvideo{
     color: #8338EC;
@@ -179,14 +178,6 @@ h1, h3, a, p{
   }
   
   
-  .right{
-    text-align: right;
-    grid-column: 2/3;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
 
   .midup{
     display: none;
