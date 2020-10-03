@@ -248,13 +248,13 @@ footer{
   }
   .logon{
     color: #EEEEEE;
-    font-size: 4em;
+    font-size: 3em;
     -webkit-text-stroke: 2px #8338EC;
   }
   
   .logos{
     color: #8338EC;
-    font-size: 4em;
+    font-size: 3em;
   }
   
   .logon:hover , .logos:hover{
