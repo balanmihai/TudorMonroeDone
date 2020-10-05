@@ -16,6 +16,7 @@
     <source src="Video content/WITH YOU video .mp4" type="video/mp4">
   </video>
 
+
   <div class="contentleft">
     <div class="up">
       <h1 class="collaboration">COLLABORATIONS</h1>
@@ -25,21 +26,28 @@
     <div class="textp">
       <p>personal project, collaboration between me, Horia Tecau, Brent Fayaz and Tequila Balantan.</p>
     </div>
+  
 
     <div class="down">
-      <div class="icons">
-        <a href=""><img src="https://img.icons8.com/nolan/64/google-play-music.png"/></a>
-        <a href=""><img src="https://img.icons8.com/nolan/64/deezer.png"/></a>
-        <a href=""><img src="https://img.icons8.com/nolan/64/spotify.png"/></a>
-        <a href=""><img src="https://img.icons8.com/nolan/64/youtube-squared.png"/></a>
-        <a href=""><img src="https://img.icons8.com/nolan/64/youtube-music.png"/></a>
-      </div>
       <div class="text2">
         <h1>WITH YOU</h1>
       </div>
     </div>
 
   </div>
+  <div class="popup" id="popup-1">
+    <div class="overlay"></div>
+    <div class="content">
+      <div class="close-btn" onclick="togglePopup()">&times;</div>
+      <h1>PLAY THE SOUND</h1>
+      <div class="icons">
+        <a href="https://www.youtube.com/watch?v=iE_6pQ3RlZU&ab_channel=Codingflag" target="blank"><img src="https://img.icons8.com/nolan/64/spotify.png"/></a>
+        <a href=""><img src="https://img.icons8.com/nolan/64/youtube-squared.png"/></a>
+        <a href=""><img src="https://img.icons8.com/nolan/64/youtube-music.png"/></a>
+      </div>
+    </div>
+  </div>
+  <button onclick="togglePopup()">PLAY THE SOUNDS</button>
 
   <div class="contentright1">
     <img src="./Pictures/girl.png" alt="salut">
@@ -68,13 +76,6 @@
       </div>
   
       <div class="down">
-        <div class="icons">
-          <a href=""><img src="https://img.icons8.com/nolan/64/google-play-music.png"/></a>
-          <a href=""><img src="https://img.icons8.com/nolan/64/deezer.png"/></a>
-          <a href=""><img src="https://img.icons8.com/nolan/64/spotify.png"/></a>
-          <a href=""><img src="https://img.icons8.com/nolan/64/youtube-squared.png"/></a>
-          <a href=""><img src="https://img.icons8.com/nolan/64/youtube-music.png"/></a>
-        </div>
         <div class="text2">
           <h1>MY WAY</h1>
         </div>
@@ -82,6 +83,20 @@
   
     </div>
   
+    <div class="popup" id="popup-1">
+      <div class="overlay"></div>
+      <div class="content">
+        <div class="close-btn" onclick="togglePopup()">&times;</div>
+        <h1>PLAY THE SOUND</h1>
+        <div class="icons">
+          <a href="https://www.youtube.com/watch?v=iE_6pQ3RlZU&ab_channel=Codingflag" target="blank"><img src="https://img.icons8.com/nolan/64/spotify.png"/></a>
+          <a href=""><img src="https://img.icons8.com/nolan/64/youtube-squared.png"/></a>
+          <a href=""><img src="https://img.icons8.com/nolan/64/youtube-music.png"/></a>
+        </div>
+      </div>
+    </div>
+    <button onclick="togglePopup()">PLAY THE SOUNDS</button>
+
     <div class="contentright">
       <img src="./Pictures/baiatumov2.png" alt="salut">
       <h1>Muhammed Al-kazaz</h1>
@@ -95,5 +110,11 @@
 
 
 </div>
+
+<script>
+  function togglePopup(){
+  document.getElementById("popup-1").classList.toggle("active");
+}
+</script>
 </body>
 </html>
