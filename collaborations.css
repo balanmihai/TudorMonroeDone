@@ -8,7 +8,7 @@
 
 html{
   scroll-behavior: smooth;
-  cursor: default;
+  cursor:url('Pictures/cursor.png'), auto;
 }
 
 ::-webkit-scrollbar {
@@ -18,6 +18,88 @@ html{
 .collaboration{
   margin: -2px;
 }
+
+
+
+
+.popup .overlay {
+  position:fixed;
+  top:0px;
+  left:0px;
+  width:100vw;
+  height:100vh;
+  background:rgba(0,0,0,0.7);
+  z-index:1;
+  display:none;
+}
+
+.popup .content {
+  color: #8338EC;
+  position:fixed;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%) scale(0);
+  background:#8338EC;
+  width:400px;
+  height:200px;
+  z-index:2;
+  text-align:center;
+  padding:20px;
+  box-sizing:border-box;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;;
+}
+
+.popup .close-btn {
+  cursor: pointer;
+  position:absolute;
+  right:20px;
+  top:20px;
+  width:30px;
+  height:30px;
+  color:#eeeeee;
+  font-size:25px;
+  font-weight:600;
+  line-height:30px;
+  text-align:center;
+  border-radius:50%;
+}
+
+.popup.active .overlay {
+  display:block;
+}
+
+.popup.active .content {
+  transition:all 300ms ease-in-out;
+  transform:translate(-50%,-50%) scale(1);
+}
+
+
+button {
+  cursor: pointer;
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  padding:10px;
+  font-size: 3em;
+  color:#eeeeee;
+  text-transform:uppercase;
+  font-family:'Roboto', sans-serif;
+  font-weight:700;
+  background: #8338EC;
+  border: none;
+}
+
+.icons{
+  padding-top: 25px;
+}
+
+.icons img{
+  height: 80px;
+}
+
+
 
 
 #videoBG1 {
@@ -90,22 +172,19 @@ h1,h3, a, p{
 .contentright1{
   grid-column: 2/3;
   position: absolute;
-  right: 1%;
+  right: 0%;
   text-align: right;
-  top: 10%;
+  top: 65%;
+  transform: translateY(-50%);
 }
 
 .contentright{
   grid-column: 2/3;
   position: absolute;
-  right:  1%;
+  right:  0%;
   text-align: right;
   top: 50%;
   transform: translateY(-50%);
-}
-
-.icons{
-  margin-left: -0.5vw;
 }
 
 .textp{
@@ -200,9 +279,6 @@ h1,h3, a, p{
     top: 85%;
   }
 
-  .icons{
-    display: none;
-  }
 
   .textp{
     width: 30vw;
@@ -228,5 +304,74 @@ h1,h3, a, p{
     color: #EEEEEE;
   }
 
-}
 
+  .popup .content {
+    font-size: 24px;
+    color: #8338EC;
+    position:fixed;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%) scale(0);
+    background:#8338EC;
+    width:300px;
+    height:200px;
+    z-index:2;
+    text-align:center;
+    padding:20px;
+    box-sizing:border-box;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;;
+  }
+  
+  .popup .close-btn {
+    cursor: pointer;
+    position:absolute;
+    right: 5px;
+    top: 5px;
+    width:30px;
+    height:30px;
+    color:#eeeeee;
+    font-size:25px;
+    font-weight:600;
+    line-height:30px;
+    text-align:center;
+    border-radius:50%;
+  }
+  
+  .popup.active .overlay {
+    display:block;
+  }
+  
+  .popup.active .content {
+    transition:all 300ms ease-in-out;
+    transform:translate(-50%,-50%) scale(1);
+  }
+  
+  button {
+    cursor: pointer;
+    position: absolute;
+    top:50%;
+    left:82%;
+    padding: 20px;
+    font-size: 1em;
+    color:#eeeeee;
+    text-transform:uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    background: #8338EC;
+    border: none;
+  
+  }
+  
+  .icons{
+    padding-top: 30px;
+  }
+  
+  .icons img{
+    height: 70px;
+  }
+
+
+
+
+}
