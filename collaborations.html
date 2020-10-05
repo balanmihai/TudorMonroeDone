@@ -4,6 +4,7 @@
   <link rel="shortcut icon" type="image/png" href="./Logos/favicon.png">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="collaborations.css">
   <title>COLLABORATIONS</title>
 </head>
@@ -11,7 +12,8 @@
 <div class="collaborations">
 
 
-<div class="collab1">
+<div class="collab1" data-aos="fade-in"
+data-aos-duration="1500">
   <video id="videoBG1" poster="" autoplay muted loop>
     <source src="Video content/WITH YOU video .mp4" type="video/mp4">
   </video>
@@ -47,7 +49,7 @@
       </div>
     </div>
   </div>
-  <button onclick="togglePopup()">PLAY THE SOUNDS</button>
+  <button onclick="togglePopup()" >PLAY THE SOUNDS</button>
 
   <div class="contentright1">
     <img src="./Pictures/girl.png" alt="salut">
@@ -110,7 +112,10 @@
 
 
 </div>
-
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 <script>
   function togglePopup(){
   document.getElementById("popup-1").classList.toggle("active");
