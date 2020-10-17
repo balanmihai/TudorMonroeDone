@@ -27,7 +27,7 @@ h1, h3, a, p{
 
 
 .page{
-  height: 100vh;
+  height: 120vh;
   background: #EEEEEE;
   display: grid;
   grid-template-columns: 40% 60%;
